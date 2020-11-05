@@ -203,8 +203,8 @@ export Slider := Rectangle {
     property<float> value;
     property<bool> enabled: true;
 
-    maximum_height: 40px;
-    minimum_height: 40px;
+    maximum_height: 32px;
+    minimum_height: 32px;
     minimum_width: 120px;
     horizontal-stretch: 1;
     vertical-stretch: 0;
