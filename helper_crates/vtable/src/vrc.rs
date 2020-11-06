@@ -188,7 +188,7 @@ impl<T: VTableMetaDropInPlace + 'static> Drop for VWeak<T> {
 }
 
 impl<T: VTableMetaDropInPlace> VWeak<T> {
-    /// Retruns the `VRc` if there is still reference count to this item.
+    /// Returns a new `VRc` if some other instance still holds a strong reference to this item.
     /// Otherwise, returns None.
     pub fn upgrade(&self) -> Option<VRc<T>> {
         if let Some(i) = self.inner {
